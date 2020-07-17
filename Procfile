@@ -1,1 +1,1 @@
-web: gunicorn <main-routing-python>:app
+web: gunicorn -b :$PORT app:app

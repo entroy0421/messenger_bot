@@ -7,6 +7,7 @@ app = Flask(__name__)
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 bot = Bot(ACCESS_TOKEN)
+port = int(os.environ.get('PORT', 5000))
 
 class players():
     def __init__(self, id):
@@ -138,4 +139,4 @@ def send_message(recipient_id, response):
     return "success"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=port, debug=True)
