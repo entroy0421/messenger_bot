@@ -67,6 +67,11 @@ def receive_message():
                 #Facebook Messenger ID for user so we know where to send response back to
                 recipient_id = message['sender']['id']
                 if message['message'].get('text'):
+                    for player in list_of_players:
+                        if recipient_id == player.return_player_id():
+                            send_message(player.id, 'in list')
+                            start_game(player, message['message'].get('text'))
+                            return "Message Processed"
                     if message['message'].get('text') == 'entroy':
                         # start_game(players(recipient_id), message['message'].get('text'))
                         list_of_players.append(players(recipient_id))
