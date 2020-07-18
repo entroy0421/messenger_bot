@@ -25,6 +25,7 @@ class players():
         self.player_in_game = False
     def check_first_to_game(self):
         if self.first_to_game == 0:
+            self.first_to_game = 1
             return True
         else :
             return False
@@ -53,9 +54,11 @@ def receive_message():
                                 return 'message processed'
                         if message['message'].get('text') == 'entroy':
                             list_of_players.append(players(recipient_id))
-                            start_game(players(recipient_id), message['message'].get('text'))
-                            return 'message processed'
-    send_message(recipient_id, 'I am messenger bot')
+                            for player in list_of_players:
+                                if recipient_id == player.id:
+                                    start_game(player, message['message'].get('text'))
+                                    return 'message processed'
+                    send_message(recipient_id, 'I am messenger bot')
     return 'message processed'
 
 def check_answer(message):
@@ -65,14 +68,13 @@ def check_answer(message):
         return False
 
 def start_game(player, message):
-    if message == 'entroy' and player.check_first_to_game() == False:
+    if message == 'entroy' and player.first_to_game == 1:
         send_message(player.id, 'do not input entroy while you are in game you mother fucker')
         return 'again'
     if player.check_first_to_game() == True:
         send_message(player.id, 'lets start the game')
         send_message(player.id, 'first i have to tell you something')
         send_message(player.id, 'there starts the game')
-        player.first_to_game = 1
     if message != 'entroy':
         if check_answer(message) == False:
             send_message(player.id, 'please input 1 to 4')
@@ -83,7 +85,7 @@ def start_game(player, message):
             send_message(player.id, 'True')
             player.correct += 1
     if player.question == 5:
-        send_message(player.id, 'you got {} answers right!!!'.format(player.correct)
+        send_message(player.id, 'you got {} answers right!!!'.format(player.correct))
         send_message(player.id, 'the game is end')
         list_of_players.remove(player)
         return 'success'
