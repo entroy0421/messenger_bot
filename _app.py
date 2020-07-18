@@ -25,7 +25,6 @@ class players():
         self.player_in_game = False
     def check_first_to_game(self):
         if self.first_to_game == 0:
-            self.first_to_game = 1
             return True
         else :
             return False
@@ -73,6 +72,7 @@ def start_game(player, message):
         send_message(player.id, 'lets start the game')
         send_message(player.id, 'first i have to tell you something')
         send_message(player.id, 'there starts the game')
+        player.first_to_game = 1
     if message != 'entroy':
         if check_answer(message) == False:
             send_message(player.id, 'please input 1 to 4')
