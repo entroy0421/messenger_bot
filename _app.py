@@ -83,7 +83,7 @@ def start_game(player, message):
             send_message(player.id, 'True')
             player.correct += 1
     if player.question == 5:
-        send_message(player.id, 'you got {} answers right!!!'.format(player.return_correct()))
+        send_message(player.id, 'you got {} answers right!!!'.format(player.correct)
         send_message(player.id, 'the game is end')
         list_of_players.remove(player)
         return 'success'
