@@ -54,7 +54,7 @@ def receive_message():
                                 return 'message processed'
                         if message['message'].get('text') == 'entroy':
                             list_of_players.append(players(recipient_id))
-                            start_game(player, message['message'].get('text'))
+                            start_game(players(recipient_id), message['message'].get('text'))
                             return 'message processed'
     send_message(recipient_id, 'I am messenger bot')
     return 'message processed'
