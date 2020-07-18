@@ -49,7 +49,7 @@ list_of_players = []
 list_of_questions = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
 
 #We will receive messages that Facebook sends our bot at this endpoint 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/messengerbot", methods=['GET', 'POST'])
 def receive_message():
     if request.method == 'GET':
         """Before allowing people to message your bot, Facebook has implemented a verify token
