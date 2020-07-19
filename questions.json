@@ -1,82 +1,102 @@
 [
     {
-        "question": "1",
-        "answer": "1"
+        "question": "下列哪一個不是程式語言？\n1. html\n2. JavaScript\n3. C ++\n4. Java",
+        "answer": "1",
+        "reason": "reason"
     },
     {
-        "question": "2",
-        "answer": "1"
+        "question": "C 語言的前身是什麼語言？\n1. B 語言\n2. Python\n3. Visual Basic\n4. Kotlin",
+        "answer": "1",
+        "reason": "reason"
     },
     {
-        "question": "3",
-        "answer": "1"
+        "question": "下列哪一個平台被稱為工程師的臉書？\n1. GitHub\n2. PornHub\n3. EngineerHub\n4. CodeHub",
+        "answer": "1",
+        "reason": "reason"
     },
     {
-        "question": "4",
-        "answer": "1"
+        "question": "第一位程式設計師是？\n1. Ada Byron(女性)\n2. Steven Paul Jobs(男性)\n3. Bill Gates(男性)\n4. Grace Hopper(女性)",
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "5",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "6",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "7",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "8",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "9",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "10",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "11",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "12",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "13",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "14",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "15",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "16",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "17",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "18",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "19",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     },
     {
         "question": "20",
-        "answer": "1"
+        "answer": "1",
+        "reason": "reason"
     }
 ]
